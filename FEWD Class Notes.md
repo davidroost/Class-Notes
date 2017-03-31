@@ -197,7 +197,7 @@ How are websites related to communication?
 
 
 
-![](../../img/extra/01/webd.png)
+![](../img/extra/01/webd.png)
 
 
 
