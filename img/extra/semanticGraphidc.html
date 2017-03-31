@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+
+	<meta property="fb:admins" content="763699465" />
+	<meta property="og:url" content="http://www.hongkiat.com/blog/html-5-semantics/"/>
+	<meta property="og:title" content="A Look Into Proper HTML5 Semantics" />
+	<meta property="og:description" content="If you carefully plan the structure of your HTML documents, you can help computers make sense of the meaning of your content. Proper syntax is important for sure, but it basically just provides parsers, search engines, and assistive techonologies with a meaningless bunch of data. If you improve" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://media02.hongkiat.com/html-5-semantics/html-structure.jpg" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<title>A Look Into Proper HTML5 Semantics - Hongkiat</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.hongkiat.com/blog/xmlrpc.php">
+
+<link rel="shortcut icon" href="http://mediatemplestatic.hongkiat.netdna-cdn.com/logo/hkdc/favicon.ico" />
+<link rel="stylesheet" href="http://www.hongkiat.com/blog/wp-content/themes/v6/style.css">
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Roboto:400,500' rel='stylesheet' type='text/css'>
+
+<style>
+.post-most {
+  position: -webkit-sticky !important;
+  position: -moz-sticky !important;
+  position: sticky !important;
+  top: 50px;
+}
+</style>
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="http://www.hongkiat.com/blog/wp-content/themes/v6/assets/css/ie.css">
+<![endif]-->
+
+
+<!-- All in One SEO Pack 2.3.4.1 by Michael Torbert of Semper Fi Web Design[1218,1274] -->
+<meta name="description" itemprop="description" content="If you carefully plan the structure of your HTML documents, you can help computers make sense of the meaning of your content. Proper syntax is important for" />
+
+<meta name="keywords" itemprop="keywords" content="web design" />
+
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Hongkiat.com &raquo; Feed" href="http://www.hongkiat.com/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hongkiat.com &raquo; Comments Feed" href="http://www.hongkiat.com/blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hongkiat.com &raquo; A Look Into Proper HTML5 Semantics Comments Feed" href="http://www.hongkiat.com/blog/html-5-semantics/feed/" />
+<link rel='stylesheet' id='et_monarch-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' type='text/css' media='all' />
+<link rel='stylesheet' id='et_monarch-css-css'  href='http://www.hongkiat.com/blog/wp-content/plugins/monarch/css/style.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://www.hongkiat.com/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=4.0.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?ver=1.8.3'></script>
+<script type='text/javascript' data-cfasync="false" id="omapi-script" src='//a.optnmnstr.com/app/js/api.min.js?ver=1.1.4.5'></script>
+<link rel='https://api.w.org/' href='http://www.hongkiat.com/blog/wp-json/' />
+<link rel='prev' title='36 Freebies &amp; Goodies For Web Designers &mdash; October 2015' href='http://www.hongkiat.com/blog/freebies-web-designer-oct-2015/' />
+<link rel='next' title='Generic TLDs &amp; How They Change The Web' href='http://www.hongkiat.com/blog/generic-tlds/' />
+<link rel="canonical" href="http://www.hongkiat.com/blog/html-5-semantics/" />
+<link rel='shortlink' href='http://wp.me/p4uxU-6u6' />
+<link rel="alternate" type="application/json+oembed" href="http://www.hongkiat.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.hongkiat.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;format=xml" />
+<link rel='https://github.com/WP-API/WP-API' href='http://www.hongkiat.com/blog/wp-json' />
+<style type="text/css" id="et-social-custom-css">
+				 
+			</style><style type='text/css'>img#wpstats{display:none}</style>
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+
+	// posts
+	googletag.defineSlot('/1022251/desktop-page-header-728x90', [728, 90], 'div-gpt-ad-1429563851793-0').addService(googletag.pubads());
+	
+  googletag.defineSlot('/1022251/desktop-page-sidebar_up-300x250', [300, 250], 'div-gpt-ad-1429564651276-0').addService(googletag.pubads());
+
+  googletag.defineSlot('/1022251/desktop-page-sidebar_middle-300x250', [300, 250], 'div-gpt-ad-1429745937703-0').addService(googletag.pubads());
+
+  googletag.defineSlot('/1022251/desktop-page-sidebar_down-300x250', [300, 250], 'div-gpt-ad-1429747254224-0').addService(googletag.pubads());
+	
+	// posts
+	googletag.defineSlot('/1022251/desktop-post-general-header-728x90', [728, 90], 'div-gpt-ad-1430469216569-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-post-general-sidebar_up-300x250', [300, 250], 'div-gpt-ad-1430471974071-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-post-general-sidebar_middle-300x250', [300, 250], 'div-gpt-ad-1430472314053-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-post-general-sidebar_down-300x250', [300, 250], 'div-gpt-ad-1430472980277-0').addService(googletag.pubads());
+
+
+	googletag.defineSlot('/1022251/desktop-post-general-content_down-600x150', [600, 150], 'div-gpt-ad-1430980250389-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-archive-general-header-728x90', [728, 90], 'div-gpt-ad-1430987932412-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-archive-general-sidebar_up-300x250', [300, 250], 'div-gpt-ad-1430988265998-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-archive-general-sidebar_middle-300x250', [300, 250], 'div-gpt-ad-1430988560786-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-archive-general-sidebar_down-300x250', [300, 250], 'div-gpt-ad-1430990185185-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-post-general-footer-01_up-responsive', [728, 90], 'div-gpt-ad-1442935568936-0').addService(googletag.pubads());
+
+  googletag.defineSlot('/1022251/desktop-post-general-sidebar_top-300x250', [300, 250], 'div-gpt-ad-1446709191646-0').addService(googletag.pubads());
+	
+	googletag.pubads().enableAsyncRendering();
+	googletag.pubads().collapseEmptyDivs();
+	googletag.enableServices();
+});
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8918970543424762",
+    enable_page_level_ads: true
+  });
+</script>
+
+</head>
+
+<body class="single single-post postid-24930 single-format-standard et_monarch post-html-5-semantics single-default">
+
+<!-- ga -->
+<script type='text/javascript'>var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-275126-1"]);_gaq.push(["_trackPageview"]);(function(){var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();</script>
+<!-- ga -->
+
+<div id="mhead" class="mobile-header slideable clearfix">
+	<div id="panel-left" class="nav-icon left"><span>&#59394;</span></div>
+	<div id="mlogo"><a href="/blog/"><span>Hongkiat.com</span></a></div>
+</div>
+
+<header id="masthead" class="site-header clearfix" role="banner">
+	<div class="container">
+		<div class="table-wrap">
+			<div class="site-branding clearfix left">
+				<div class="logo">				<a href="/blog/"><span>Hongkiat.com</span></a>
+				</div>			</div>
+			<div class="ads right">
+				<!--
+dfp: fm > bsa > z
+-->
+
+<!-- /1022251/desktop-post-general-header-728x90 -->
+<!-- <div id='div-gpt-ad-1430469216569-0' style='height:90px; width:728px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430469216569-0'); });
+</script>
+</div> -->
+
+<script type='text/javascript' src='http://static.fmpub.net/zone/4724'></script>			</div>
+		</div>
+	</div>
+</header>
+
+<nav id="navbar" class="site-navbar slideable no-sticky clearfix" role="navigation">
+
+	<div id="touch-scroll" class="container">
+		<div class="nav table-wrap">
+			<div class="primary">
+	<ul id="menu-primary" class="menu">
+		<li class="menu-item menu-home icon-home has-children">
+			<a href="http://www.hongkiat.com/blog/"><span>Home</span></a>
+			<div class="sub sub-home">
+				<ul class="sub-list sub-list-home">
+          <li class="sub-item"><a href="/blog/about-us/">About</a></li>
+          <li class="sub-item"><a href="/blog/advertise/">Advertise</a></li>
+          <li class="sub-item"><a href="/blog/contact/">Contact</a></li>
+          <li class="sub-item"><a href="/blog/submit-news-tips/">Submit Tips</a></li>
+          <li class="sub-item"><a href="/blog/authors/">Authors</a></li>
+          <li class="sub-item"><a href="/blog/write-for-us/">Write for Us</a></li>
+          <li class="sub-item"><a rel="nofollow" target="_blank" href="/blog/publishing-policy/">Publishing Policy</a></li>
+          <li class="sub-item"><a rel="nofollow" target="_blank" href="/blog/privacy-policy-for-hongkiatcom/">Privacy</a></li>
+          <li class="sub-item"><a href="/blog/sitemap.xml">Sitemap</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="menu-item menu-category icon-code has-children" data-slug="design-dev">
+			<a href="/blog/design-dev/" data-id="132"><span>Design / Dev</span></a>
+		</li>
+		<li class="menu-item menu-category icon-desktop has-children" data-slug="technology">
+			<a href="/blog/technology/"><span>Technology</span></a>
+		</li>
+		<li class="menu-item menu-category icon-lamp has-children" data-slug="inspiration">
+			<a href="/blog/inspiration/"><span>Inspiration</span></a>
+		</li>
+		<li class="menu-item menu-category icon-users has-children" data-slug="social-commerce">
+			<a href="/blog/social-commerce/"><span>Social Commerce</span></a>
+		</li>
+		<li class="menu-item icon-basket">
+			<a rel="nofollow" target="_blank" href="http://deals.hongkiat.com"><span>Deals</span></a>
+		</li>
+	</ul>
+</div>			<div class="site-links-top">
+				<h4>Site Links</h4>
+				<ul class="clearfix">
+					<li><a href="/blog/about-us/">About Us</a></li>
+					<li><a href="/blog/authors/">Authors</a></li>
+					<li><a href="/blog/write-for-us/">Write for Us</a></li>
+					<li><a href="/blog/contact/">Contact</a></li>
+					<li><a href="/blog/submit-news-tips/">Submit Tips</a></li>
+				</ul>
+			</div>
+			<aside class="secondary">
+				<div class="search right">
+					<form class="searchform" method="get" action="/blog/search">
+						<input name="q" type="search" class="field" value="Search here..." onfocus="if(this.value=='Search here...')this.value='';" onblur="if(this.value=='')this.value='Search here...';">
+					</form>
+				</div>
+			</aside>
+		</div>
+	</div>
+
+	<div class="nav-scroll">
+		<div class="container">
+			
+							<ul class="post-navigation">
+					<li class="next"><a href="http://www.hongkiat.com/blog/generic-tlds/" title="Generic TLDs &amp; How They Change The Web"><span class="arrow">&#xe803;</span><span class="title">Generic TLDs &amp; How They Change The Web</span></a></li>
+					<li class="prev">
+					<a href="http://www.hongkiat.com/blog/freebies-web-designer-oct-2015/" title="36 Freebies &amp; Goodies For Web Designers &mdash; October 2015"><span class="arrow">&#xe805;</span><span class="title">36 Freebies &amp; Goodies For Web Designers &mdash; October 2015</span></a>					</li>
+				</ul>
+						<div class="access right">
+				<div class="right">
+					<div class="nav-toggle-link right">
+						<a id="close-nav" href="#">&#59403;</a>
+						<a id="open-nav" href="#">&#59410;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<main id="primary" class="slideable site-primary" style="opacity: 0">
+
+
+
+<div id="content" class="site-content clearfix">
+<div class="clearfix">	<div class="left_panel" role="main">
+					<article id="post-24930" class="entry-area post-24930 post type-post status-publish format-standard hentry category-design tag-html tag-series-html5-css3-tuts">
+	<header class="entry-header">
+		<h1 class="entry-title">A Look Into Proper HTML5 Semantics</h1>
+		<div class="entry-meta">
+			<ul>
+				<li class="entry-author"><a href="http://www.hongkiat.com/blog/author/anna_monus/" title="Posts by Anna Monus" rel="author">Anna Monus</a> <span class="dash">&mdash;</span></li>
+				<li class="entry-category"> <a href="http://www.hongkiat.com/blog/category/design/" title="View all posts in Web Design">Web Design</a></li>
+							</ul>
+		</div>
+	</header>
+	<div class="entry-content clearfix" itemProp="articleBody">
+		<!-- ads -->
+		<!--
+channel:general
+g(general)
+-->
+<style>
+	.ad-unit-after-title {
+  	display: inline-block;
+  	min-width: 320px;
+  	max-width: 645px !important;
+  	width: 100%; 
+  	height: 115px;
+	}
+</style>
+<div class="ad-unit-after-title">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- After Title (general) -->
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:320px;max-width:645px;width:100%;height:115px"
+     data-ad-client="ca-pub-8918970543424762"
+     data-ad-slot="4552539801"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>		<!-- /ads -->
+		<div class="entry-content-inner intxt">
+		<p>If you carefully plan the structure of your HTML documents, you can <strong>help computers make sense of the meaning of your content</strong>. Proper syntax is important for sure, but it basically just provides parsers, search engines, and assistive techonologies with a meaningless bunch of data.</p>
+<p>If you improve your front-end workflow with paying attention to semantics,	you can create a higher quality content that attracts more visitors. Semantics is the <strong>study of meaning</strong>, in a broader context it&#8217;s <strong>a branch of logic and linguistics</strong>.</p>
+<p>In the world of web development we talk about semantic content when computers understand the structure of a document, and the <strong>roles of the elements inside of it</strong>. If we want to creating proper semantics, we need to deeply <strong>understand the structure</strong> of our content and the <strong>capabilities</strong> of frontend technologies.</p>
+<figure class="entry-image"><div class="et_social_media_wrapper"><img src="http://media02.hongkiat.com/html-5-semantics/html-structure.jpg" alt="HTML5 Semantics" width="700" height="589"><div class="et_social_media et_social_media_hidden et_social_mobile_on">
+				<div class="et_social_networks et_social_autowidth et_social_darken et_social_left et_social_rounded et_social_outer_dark">
+					
+					<ul class="et_social_icons_container"><li class="et_social_facebook">
+									<div data-social_link="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;t=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="facebook" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_facebook"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_twitter">
+									<div data-social_link="http://twitter.com/share?text=A%20Look%20Into%20Proper%20HTML5%20Semantics&#038;url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;via=hongkiat" rel="nofollow" class="et_social_share" data-social_name="twitter" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_twitter"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_googleplus">
+									<div data-social_link="https://plus.google.com/share?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;t=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="googleplus" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_googleplus"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_pinterest">
+									<div data-social_link="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;media=http%3A%2F%2Fmedia02.hongkiat.com%2Fhtml-5-semantics%2Fhtml-structure.jpg&#038;description=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="pinterest" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_pinterest"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li></ul>
+				</div>
+			</div></div></figure>
+<p>So what are the tangible benefits? Proper semantics means a <strong>more searchable content</strong> that leads to a <strong>better search engine ranking</strong>. We also increase accessibility, as assistive technologies such as <strong>screen readers can better interpret the meaning of our content</strong>.</p>
+<p>There are many different front-end development techniques that enable developers to achieve a semantic page structure. This post will provide you with a brief intro into semantic HTML tags and the concept of the document outline.</p>
+<h3>Semantic and Non-Semantic HTML Tags</h3>
+<p>The concept of semantics is not as new as it seems, it existed well before the era of HTML5. The term of semantic web was coined as early as in 2001 by <a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Sir Tim Berners-Lee</a>. Under &#8220;semantic web&#8221; he meant a web of data that can be processed by machines.</p>
+<p>This primarily means that <strong>separate HTML elements need to have their distinguishable structural roles</strong>. According to the <a href="http://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">definition of W3C</a> &#8220;a semantic element clearly describes its meaning to both the browser and the developer&#8221;.</p>
+<h4>Semantic Elements Before HTML5</h4>
+<p>Semantic elements existed before HTML5 too, just in most cases developers weren&#8217;t aware that <strong>some of the tags they used were actually semantic</strong>. Just think about the <code>&lt;form&gt;&lt;/form&gt;</code> or the <code>&lt;img&gt;</code> tags.</p>
+<p>Their roles are clear for both us and the user agent: <code>&lt;form&gt;</code> simply contains a form, just like <code>&lt;img&gt;</code> contains an image. Nobody will ever place a table or a headline inside and <code>&lt;img&gt;</code> tag (or at least let&#8217;s hope so).</p>
+<p>The <code>&lt;table&gt;&lt;/table&gt;</code> element, and its related tags such as table rows, table cells, etc. are also semantic tags that existed before HTML5, however due to the table-based layout that was heavily used for many years, most developers didn&#8217;t utilized them in the semantic way. <strong>This led to a web that sacrificed logical structure for layout</strong>.</p>
+<p> <strong>Ordered</strong> and <strong>unordered lists</strong>, <strong>paragraphs</strong>, <strong>h1-h6 heading tags</strong> are all semantic elements that preceded HTML5.</p>
+<h4>Non-Semantic Elements</h4>
+<p>Non-semantic elements don&#8217;t have any special meaning, the hierchical relationships between them are merely illusory. The most widely used examples of non-semantic HTML tags are the <code>&lt;div&gt;&lt;/div&gt;</code> and the <code>&lt;span&gt;&lt;/span&gt;</code> tags.</p>
+<p>If your site ever caught the horrible disease of <em>divitis</em>, you know what I&#8217;m talking about. Yep. Divs are not necessarily wrong, but <a href="http://maclanewilkison.com/the-fight-against-divitis/" target="_blank"><em>divitis</em> needs to be fought</a> if we want to write maintainable, modular, and meaningful HTML code.</p>
+<figure class="entry-image"><div class="et_social_media_wrapper"><img src="http://media02.hongkiat.com/html-5-semantics/fight-against-divitis.jpg" alt="Fight Against Divitis" width="700" height="525"><div class="et_social_media et_social_media_hidden et_social_mobile_on">
+				<div class="et_social_networks et_social_autowidth et_social_darken et_social_left et_social_rounded et_social_outer_dark">
+					
+					<ul class="et_social_icons_container"><li class="et_social_facebook">
+									<div data-social_link="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;t=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="facebook" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_facebook"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_twitter">
+									<div data-social_link="http://twitter.com/share?text=A%20Look%20Into%20Proper%20HTML5%20Semantics&#038;url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;via=hongkiat" rel="nofollow" class="et_social_share" data-social_name="twitter" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_twitter"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_googleplus">
+									<div data-social_link="https://plus.google.com/share?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;t=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="googleplus" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_googleplus"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_pinterest">
+									<div data-social_link="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;media=http%3A%2F%2Fmedia02.hongkiat.com%2Fhtml-5-semantics%2Ffight-against-divitis.jpg&#038;description=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="pinterest" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_pinterest"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li></ul>
+				</div>
+			</div></div></p>
+<figcaption class="entry-image-caption"><a href="http://maclanewilkison.com/the-fight-against-divitis/" target="_blank">IMAGE: Maclane Wilkinson&#8217;s Blog</a></figcaption>
+</figure>
+<p>Smashing Magazine beautifully explains <a href="http://www.smashingmagazine.com/2013/01/the-importance-of-sections/#the-problem-with-div">what the real problem is</a> with the excessive and unreasonable use of the <code>&lt;div&gt;</code> tag. The gist is that if we <strong>include a div inside a div</strong>, it appears as though <strong>the outer div would be the parent element of the inner one,</strong> while <strong>in reality this is not the case</strong>.</p>
+<p>There&#8217;s no relationship between the two, just like in case of the <code>&lt;span&gt;</code> tag that works the same way, just on the inline level.</p>
+<p>Don&#8217;t panic if you still feel attached to <code>&lt;div&gt;</code>-s and <code>&lt;span&gt;</code>-s though, as <strong>you don&#8217;t have to completely ditch them</strong>. They are still the best choice for grouping content solely for styling purposes and in <a href="http://www.w3.org/wiki/HTML/Elements/div" target="_blank">other last resort cases</a>.</p>
+<h4>Text Semantics in HTML5</h4>
+<p>HTML5 introduced many new semantic elements that make easy content organization possible. They don&#8217;t only help you organize content on the level of the whole document (see in details in the next section), but also inside text blocks, as inline tags.</p>
+<p>Probably the most popular text-level semantic tags are <a href="http://www.w3schools.com/tags/tag_strong.asp" target="_blank"><code>&lt;strong&gt;&lt;/strong&gt;</code></a> and <a href="http://www.w3schools.com/tags/tag_em.asp" target="_blank"><code>&lt;em&gt;&lt;/em&gt;</code></a>, but they also existed before HTML5. Among the new inline semantic elements we can find for example the <a href="http://www.w3schools.com/tags/tag_time.asp" target="_blank"><code>&lt;time&gt;&lt;/time&gt;,</code></a> tag for <strong>human-readable date-times</strong>, and <a href="http://www.w3schools.com/tags/tag_mark.asp" target="_blank"><code>&lt;mark&gt;&lt;/mark&gt;</code></a> for <strong>highlighted text</strong>.</p>
+<p>See <a href="https://html.spec.whatwg.org/multipage/semantics.html#text-level-semantics" target="_blank">this list</a> for all text-level semantic elements that are currently in use.</p>
+<h3>Document Outline in HTML5</h3>
+<p>The document outline is the structure of an HTML document. It shows how elements are related to each other. The document outline has been generated solely by mapping elements, such as headings, table titles, form titles, and others in the earlier versions of HTML such as HTML4.01 and XHTML.</p>
+<p>In HTML5 the <a href="http://www.w3.org/TR/html5/sections.html#outline" target="_blank">outlining algorithm</a> has been enhanced by new <a href="http://www.w3.org/WAI/GL/wiki/Using_HTML5_section_elements" target="_blank">sectioning elements</a>, namely:</p>
+<ul>
+<li><code>&lt;section&gt;&lt;/section&gt;</code> for <strong>sections grouped around a specific theme</strong></li>
+<li><code>&lt;article&gt;&lt;/article&gt;</code> for <strong>complete or self-contained compositions</strong> such as a blog post or a widget</li>
+<li><code>&lt;nav&gt;&lt;/nav&gt;</code> for <strong>navigation blocks</strong></li>
+<li><code>&lt;aside&gt;&lt;/aside&gt;</code> for <strong>complementary content such as sidebars</strong>. </li>
+</ul>
+<p>There&#8217;s a fifth sectioning element in HTML5, but it&#8217;s not new, it&#8217;s the <code>&lt;body&gt;&lt;/body&gt;</code> tag. The <code>&lt;header&gt;&lt;/header&gt;</code> and <code>&lt;footer&gt;&lt;/footer&gt;</code> tags are also new, but they don&#8217;t generate new sections in a document, they divide up the content inside sections. This means that <strong>every sectioning element</strong> (body, article, section, nav and aside) <strong>can have its own header and footer</strong>.</p>
+<h3>Tips For Semantically Structured Content</h3>
+<p>If we want to create a well-structured document outline we need to pay attention to the following rules:</p>
+<p>1. The outermost sectioning element is always the <code>&lt;body&gt;&lt;/body&gt;</code> tag.</p>
+<p>2. Sections in HTML5 can be nested.</p>
+<p>3. Each section has its own heading hierarchy. Each of them (even the innermost nested section) can have an <code>h1</code> tag.</p>
+<p>4. While the document outline is primarily defined by the 5 sectioning elements, it also needs proper headings for each section.</p>
+<p>5. It&#8217;s always the first heading element (let it be h1 or a lower rank heading tag) that defines the heading of the given section. The following heading tags inside the same section need to be relative to this. (If the first heading is an h3 inside a sectioning element, 	don&#8217;t put an h3 after that.)</p>
+<p>6. The sections defined by the <code>&lt;nav&gt;&lt;/nav&gt;</code>, and the <code>&lt;aside&gt;&lt;/aside&gt;</code> tags don&#8217;t belong to the main outline of the HTML document, they are usually not rendered initially by assistive technologies.</p>
+<p>7. Each section (body, section, article, aside, nav) can have their own <code>&lt;header&gt;&lt;/header&gt;</code> and <code>&lt;footer&gt;&lt;/footer&gt;</code> tags, that defines the header (such as logo, author&#8217;s name, dates, meta info, etc.) and the footer (copyright, notes, links, etc.) of that section.</p>
+<h4>Example: A Semantic Outline</h4>
+<p>Let&#8217;s see an example for a semantic document outline to see clearer how it works. Our example code will result in the following document structure:</p>
+<figure class="entry-image"><div class="et_social_media_wrapper"><img src="http://media02.hongkiat.com/html-5-semantics/document-outline-example.jpg" alt="Document Outline Example" width="700" height="500"><div class="et_social_media et_social_media_hidden et_social_mobile_on">
+				<div class="et_social_networks et_social_autowidth et_social_darken et_social_left et_social_rounded et_social_outer_dark">
+					
+					<ul class="et_social_icons_container"><li class="et_social_facebook">
+									<div data-social_link="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;t=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="facebook" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_facebook"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_twitter">
+									<div data-social_link="http://twitter.com/share?text=A%20Look%20Into%20Proper%20HTML5%20Semantics&#038;url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;via=hongkiat" rel="nofollow" class="et_social_share" data-social_name="twitter" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_twitter"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_googleplus">
+									<div data-social_link="https://plus.google.com/share?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;t=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="googleplus" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_googleplus"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_pinterest">
+									<div data-social_link="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;media=http%3A%2F%2Fmedia02.hongkiat.com%2Fhtml-5-semantics%2Fdocument-outline-example.jpg&#038;description=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="pinterest" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_pinterest"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li></ul>
+				</div>
+			</div></div></figure>
+<p>And here is the code with proper semantic sectioning:</p>
+<pre name="code" class="html">
+&lt;body&gt;
+
+	&lt;header&gt;
+		&lt;h1&gt;Welcome On Our Website!&lt;/h1&gt;
+		&lt;p&gt;Here is our logo and slogan.&lt;/p&gt;
+	&lt;/header&gt;
+	
+	&lt;nav&gt;
+		&lt;header&gt;
+			&lt;h2&gt;Choose Your Interest&lt;/h2&gt;
+		&lt;/header&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Menu 1&lt;/li&gt;
+			&lt;li&gt;Menu 2&lt;/li&gt;
+			&lt;li&gt;Menu 3&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+	
+	&lt;article&gt;
+		&lt;header&gt;
+			&lt;h1&gt;Title of Article&lt;/h1&gt;
+			&lt;h2&gt;Subtitle of Article&lt;/h2&gt;
+		&lt;/header&gt;
+		
+		&lt;section&gt;
+			&lt;h3&gt;First Logical Part (e.g. &quot;Theory&quot;)&lt;/h3&gt;
+			&lt;p&gt;Paragraph 1 in first section&lt;/p&gt;
+			
+			&lt;h4&gt;Some Other Subheading in First Section&lt;/h4&gt;
+			&lt;p&gt;Paragraph 2 in first section&lt;/p&gt;
+		&lt;/section&gt;
+		
+		&lt;section&gt;
+			&lt;h3&gt;Second Logical Part (e.g. &quot;Practice&quot;)&lt;/h3&gt;
+			&lt;p&gt;Paragraph 1 in second section&lt;/p&gt;
+			&lt;p&gt;Paragraph 2 in second section&lt;/p&gt;
+		&lt;/section&gt;
+	
+		&lt;footer&gt;
+			&lt;h4&gt;Author Bio&lt;/h4&gt;
+			&lt;p&gt;Paragraph in Article&#039;s Footer&lt;/p&gt;
+		&lt;/footer&gt;
+	
+	&lt;/article&gt;
+	
+	&lt;aside&gt;
+		
+		&lt;h2&gt;Get To Know Us Better&lt;/h2&gt;
+		
+		&lt;section&gt;
+			&lt;h3&gt;Popular Posts&lt;/h3&gt;
+			&lt;ul&gt;...&lt;/ul&gt;
+		&lt;/section&gt;
+		
+		&lt;section&gt;
+			&lt;h3&gt;Partners&lt;/h3&gt;
+			&lt;ul&gt;...&lt;/ul&gt;
+		&lt;/section&gt;
+		
+		&lt;section&gt;
+			&lt;h3&gt;Testimonials&lt;/h3&gt;
+			&lt;ul&gt;...&lt;/ul&gt;
+		&lt;/section&gt;
+	
+	&lt;/aside&gt;
+	
+	&lt;footer&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Copyright&lt;/li&gt;
+			&lt;li&gt;Social Media Links&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/footer&gt;
+
+&lt;/body&gt;
+</pre>
+<p>If you take a look at the code snippet above, you&#8217;ll see that headers and footers are optional, we can freely choose if we want to use them or not, but it&#8217;s <strong>strongly recommended to always include a heading for each section</strong>, otherwise the section will be &#8220;Untitled&#8221; in the document outline.</p>
+<p>Luckily there are many great tools all over the internet that allow us to check the document outline, this time we will use the <a href="https://gsnedders.html5.org/outliner/" target="_blank">Outliner</a> tool of html5.org.</p>
+<p>If we insert our code snippet into the form provided by the outliner, and click the &#8220;Outline this!&#8221; button, we will see the following result:</p>
+<figure class="entry-image"><div class="et_social_media_wrapper"><img src="http://media02.hongkiat.com/html-5-semantics/example-code-outline.jpg" alt="Example Code Outline" width="700" height="386"><div class="et_social_media et_social_media_hidden et_social_mobile_on">
+				<div class="et_social_networks et_social_autowidth et_social_darken et_social_left et_social_rounded et_social_outer_dark">
+					
+					<ul class="et_social_icons_container"><li class="et_social_facebook">
+									<div data-social_link="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;t=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="facebook" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_facebook"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_twitter">
+									<div data-social_link="http://twitter.com/share?text=A%20Look%20Into%20Proper%20HTML5%20Semantics&#038;url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;via=hongkiat" rel="nofollow" class="et_social_share" data-social_name="twitter" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_twitter"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_googleplus">
+									<div data-social_link="https://plus.google.com/share?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;t=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="googleplus" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_googleplus"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li><li class="et_social_pinterest">
+									<div data-social_link="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml-5-semantics%2F&#038;media=http%3A%2F%2Fmedia02.hongkiat.com%2Fhtml-5-semantics%2Fexample-code-outline.jpg&#038;description=A%20Look%20Into%20Proper%20HTML5%20Semantics" rel="nofollow" class="et_social_share" data-social_name="pinterest" data-social_type="media" data-post_id="24930">
+										<i class="et_social_icon et_social_icon_pinterest"></i>
+										
+										<span class="et_social_overlay"></span>
+									</div>
+								</li></ul>
+				</div>
+			</div></div></figure>
+<p>This is the <strong>document outline of our sample code</strong>, this is how search engines see it, and screen readers read it to their visually impaired users. It&#8217;s semantic, well-structured, and there&#8217;s no nasty &#8220;Untitled&#8221; sections in it.</p>
+<p>If you want to look how an Untitled section looks like in the Outliner just delete some of the heading tags in the example code.</p>
+<h3>Other Aspects of Web Semantics</h3>
+<p>Semantic HTML tags and document outlines are only a small part of web semantics. The content of a web page can be made even more meaningful with the help of the <a href="http://www.hongkiat.com/blog/aria-web-standards/">WAI-ARIA accessibility protocol</a>, and <a href="https://developers.google.com/structured-data/schema-org" target="_blank">structured data</a> such as the <a href="http://www.w3.org/TR/rdfa-lite/" target="_blank">RDFa</a> protocol, the <a href="http://schema.org/docs/gs.html#microdata_how" target="_blank"> schema.org microdata</a>, or the <a href="http://www.w3.org/TR/json-ld/" target="_blank">JSON-LD</a> markup (you can use <strong>only one of the three</strong> at the same time).</p>
+		</div>
+		<!-- ads -->
+		<!-- dfp: g -->
+<!-- /1022251/desktop-post-general-content_down-custom -->
+<div id="desktop-post-general-content_down-custom" style="width: 100%; max-width: 650px;">
+  <script type="text/javascript">
+	  adUnit = document.getElementById("desktop-post-general-content_down-custom");
+	  adWidth = adUnit.offsetWidth;
+	  
+	  google_ad_client = "ca-pub-8918970543424762";
+	  google_ad_slot = "5791071802";
+	  google_ad_channel = '4314338609';
+	  google_override_format = true;
+	  
+	  google_ad_width = adWidth;
+	  google_ad_height = 250;
+	  
+	  google_font_face = 'helvetica';
+	  google_max_num_ads     = '1';
+  </script>
+  <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>		<!-- /ads -->
+			</div><!-- .entry-content -->
+	<footer class="entry-footer">
+		
+		<div class="related-post clearfix">
+			<h3>Readers also read:</h3>
+			<div id="related-entries" class="clearfix">
+				<ul id="related-items" class="clearfix">
+									<li class="clearfix">
+						<figure class="entry-thumbnail small"> 
+							<a href="http://www.hongkiat.com/blog/bootstrap-megamenu-yamm3/" title="Continue reading - YAMM3 &#8211; Build Megamenu For Bootstrap 3">
+								<img src="http://media03.hongkiat.com/thumbs/150x96/bootstrap-megamenu-yamm3.jpg"/>
+							</a>
+						</figure>
+						<h4 class="entry-title">
+							<a href="http://www.hongkiat.com/blog/bootstrap-megamenu-yamm3/" rel="bookmark">YAMM3 &#8211; Build Megamenu For Bootstrap 3</a>
+						</h4>
+					</li>
+									<li class="clearfix">
+						<figure class="entry-thumbnail small"> 
+							<a href="http://www.hongkiat.com/blog/web-content-with-markdown/" title="Continue reading - Writing Web Content with Markdown">
+								<img src="http://media03.hongkiat.com/thumbs/150x96/web-content-with-markdown.jpg"/>
+							</a>
+						</figure>
+						<h4 class="entry-title">
+							<a href="http://www.hongkiat.com/blog/web-content-with-markdown/" rel="bookmark">Writing Web Content with Markdown</a>
+						</h4>
+					</li>
+									<li class="clearfix">
+						<figure class="entry-thumbnail small"> 
+							<a href="http://www.hongkiat.com/blog/writing-for-the-web-tips-common-mistakes-we-make/" title="Continue reading - Writing For The Web: Tips &#038; Common Mistakes We Make">
+								<img src="http://media03.hongkiat.com/thumbs/150x96/writing-for-the-web-tips-common-mistakes-we-make.jpg"/>
+							</a>
+						</figure>
+						<h4 class="entry-title">
+							<a href="http://www.hongkiat.com/blog/writing-for-the-web-tips-common-mistakes-we-make/" rel="bookmark">Writing For The Web: Tips &#038; Common Mistakes We Make</a>
+						</h4>
+					</li>
+								</ul>
+			</div>
+			<div id="wsj">
+				<!-- BEGIN ADAPTIVE EMBED CODE-->
+				<script src='https://cdn-v2.mediagraph.com/video-js/2.0/_onescreen.js'></script>
+					<div id='os_dmp_embed'></div>
+					<script>
+					  window.os_env_prop = "agora-consumer.mediagraph.com"
+					  com.onescreen.widgets.load('OUUt1u6nGuOuftQI', 'os_dmp_embed');
+					</script>
+				<noscript>This application requires JavaScript.</noscript>
+				<!-- END ADAPTIVE EMBED CODE-->
+			</div>
+		</div>
+	<div class="tag-list"><ul><li class="tag-heading">Read more posts on:</li><li><a href="http://www.hongkiat.com/blog/tag/html/" rel="tag">html</a></li>,<li><a href="http://www.hongkiat.com/blog/tag/series-html5-css3-tuts/" rel="tag">HTML5 / CSS3 Tutorials</a></li></ul></div>	</footer><!-- .entry-meta -->
+	
+		<div class="ad ads-desktop sBF_banner">
+		<!--
+dfp: bsa
+-->
+<!-- /1022251/desktop-post-general-content_down-600x150 -->
+<div id='div-gpt-ad-1430980250389-0' style='height:150px; width:600px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430980250389-0'); });
+</script>
+</div>	</div>
+	
+	<div class="ad ads-desktop fmpub">
+		<script type='text/javascript' src='http://static.fmpub.net/zone/7972'></script>		
+	</div>
+	
+</article><!-- #post-## -->			
+<div id="comments" class="comments-area">
+	<div id="disqus_thread"></div>
+</div><!-- #comments -->
+			</div><!-- .left_panel -->
+<div id="secondary" class="sidebar" role="complementary">
+  	<aside class="widget form-subscribe clearfix">
+		<form action="http://hongkiat.us1.list-manage.com/subscribe/post?u=2cad5936fa92d77b81f41d691&amp;id=e23e003d87" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+			<label for="mce-EMAIL">Get daily articles in your inbox for free.</label>
+			<div class="inputwrap clearfix">
+				<input type="email" name="EMAIL" class="email" id="mce-EMAIL" value="Insert email address" onfocus="if(this.value=='Insert email address')this.value='';" onblur="if(this.value=='')this.value='Insert email address';" required>
+				<span class="input-button">
+					<input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</span>
+			</div>
+		</form>
+	</aside>
+  
+		<div id='div-gpt-ad-1446709191646-0' style='height:250px; width:300px; border: 0; margin-bottom: 20px;'>
+		<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1446709191646-0'); });
+		</script>
+	</div>
+	
+	<aside id="post-most-widget" class="widget post-most clearfix">
+
+		<!-- start loop -->
+		<div style="width:300px;">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- sidebar native -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;min-width:300px;max-width:1200px;width:100%;height:150px"
+			     data-ad-client="ca-pub-8918970543424762"
+			     data-ad-slot="6551833404"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<h3 class="widget-title">Popular in Web Design</h3>
+		<div id="most-items" class="clearfix">
+			<div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/designers-developers-monthly-05-2016/" title="Continue reading - Fresh Resources for Web Developers &ndash; May 2016" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/designers-developers-monthly-05-2016.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/designers-developers-monthly-05-2016/" rel="nofollow">Fresh Resources for Web Developers &ndash; May 2016</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/thoriq/" title="Posts by Thoriq Firdaus" rel="author">Thoriq Firdaus</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/online-typography-tools/" title="Continue reading - 15 Online Typography Tools All Designers Should Know" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/online-typography-tools.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/online-typography-tools/" rel="nofollow">15 Online Typography Tools All Designers Should Know</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/nancy_young/" title="Posts by Nancy Young" rel="author">Nancy Young</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/worst-bizarre-programming-languages/" title="Continue reading - 10 Programming Languages You Wouldn&#8217;t Want To Code In" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/worst-bizarre-programming-languages.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/worst-bizarre-programming-languages/" rel="nofollow">10 Programming Languages You Wouldn&#8217;t Want To Code In</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/ashutosh_ks/" title="Posts by Ashutosh KS" rel="author">Ashutosh KS</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/reliable-coding-services/" title="Continue reading - 10 Conversion Services For Your Coding Needs" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/reliable-coding-services.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/reliable-coding-services/" rel="nofollow">10 Conversion Services For Your Coding Needs</a></h4>
+					<div class="entry-meta">
+				Kate Dagli			</div>
+			</div>
+</div><!--
+dfp: fm > z > g
+-->
+<!-- /1022251/desktop-post-general-sidebar_up-300x250 -->
+<div id='div-gpt-ad-1430471974071-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430471974071-0'); });
+</script>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/japanese-web-design/" title="Continue reading - Deciphering The Curious Case of How Japanese Web Design Works [Op-Ed]" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/japanese-web-design.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/japanese-web-design/" rel="nofollow">Deciphering The Curious Case of How Japanese Web Design Works [Op-Ed]</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/rean/" title="Posts by Rean" rel="author">Rean</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/bold-beautiful-illustrated-websites/" title="Continue reading - Showcase of 40 Bold &#038; Beautiful Illustrated Websites" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/bold-beautiful-illustrated-websites.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/bold-beautiful-illustrated-websites/" rel="nofollow">Showcase of 40 Bold &#038; Beautiful Illustrated Websites</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/nancy_young/" title="Posts by Nancy Young" rel="author">Nancy Young</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/bethemes-building-good-portfolio/" title="Continue reading - How Good Portfolios Can Be Your Asset" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/bethemes-building-good-portfolio.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/bethemes-building-good-portfolio/" rel="nofollow">How Good Portfolios Can Be Your Asset</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/guest_contributors/" title="Posts by Guest Contributor" rel="author">Guest Contributor</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/cool-website-experiments/" title="Continue reading - 20 Web Design Concepts That Will Blow Your Mind" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/cool-website-experiments.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/cool-website-experiments/" rel="nofollow">20 Web Design Concepts That Will Blow Your Mind</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/nancy_young/" title="Posts by Nancy Young" rel="author">Nancy Young</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/creativity-coding-needs/" title="Continue reading - How Creativity &amp; Care Power Your Coding Needs" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/creativity-coding-needs.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/creativity-coding-needs/" rel="nofollow">How Creativity &amp; Care Power Your Coding Needs</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/guest_contributors/" title="Posts by Guest Contributor" rel="author">Guest Contributor</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/webp-guide/" title="Continue reading - Complete Guide to Using WebP Image Format" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/webp-guide.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/webp-guide/" rel="nofollow">Complete Guide to Using WebP Image Format</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/hongkiat/" title="Posts by Hongkiat Lim" rel="author">Hongkiat Lim</a>			</div>
+			</div>
+</div><!--
+dfp: z > g
+-->
+
+<!-- /1022251/desktop-post-general-sidebar_middle-300x250 -->
+<!-- <div id='div-gpt-ad-1430472314053-0' style='height:250px; width:300px;'> -->
+<div id='div-gpt-ad-1430472314053-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430472314053-0'); });
+</script>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/developers-command-line/" title="Continue reading - Why All Developers Should Learn Command Line" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/developers-command-line.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/developers-command-line/" rel="nofollow">Why All Developers Should Learn Command Line</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/jake/" title="Posts by Jake Rocheleau" rel="author">Jake Rocheleau</a>			</div>
+			</div>
+</div><div class="post most-item clearfix">
+	<div class="entry-thumbnail small"> 
+		<a href="http://www.hongkiat.com/blog/firefox-dev-tools/" title="Continue reading - Firefox Developer Edition: 6 Coolest Tools to Try" rel="nofollow">
+			<img src="http://media03.hongkiat.com/thumbs/150x96/firefox-dev-tools.jpg" width="150" height="96"/>
+		</a>
+	</div>
+	<div class="entry-content">
+		<h4 class="entry-title"><a href="http://www.hongkiat.com/blog/firefox-dev-tools/" rel="nofollow">Firefox Developer Edition: 6 Coolest Tools to Try</a></h4>
+					<div class="entry-meta">
+				<a href="http://www.hongkiat.com/blog/author/preethi/" title="Posts by Preethi Ranjit" rel="author">Preethi Ranjit</a>			</div>
+			</div>
+</div><!--
+dfp: bsa
+-->
+
+<!-- /1022251/desktop-post-general-sidebar_down-300x250 -->
+<li id='div-gpt-ad-1430472980277-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430472980277-0'); });
+</script>
+</li>		</div>
+	</aside>
+
+
+</div>
+		</div><!-- .table-wrap -->
+		
+				<div id="single-more-posts" class="single-more clearfix">
+			<div id="desktop-post-general-footer-responsive" class="single-more-ad">
+				<!--
+dfp: z > g
+-->
+<!-- /1022251/desktop-post-general-footer-01_up-responsive -->
+
+<div id='div-gpt-ad-1442935568936-0' style="text-align:center"></div>
+<div id='div-ga-footer'></div>			</div>
+		</div>
+		
+	</div><!-- #content -->
+</main>
+
+<!-- Footer -->
+<footer id="footer" class="site-footer slidable clearfix" role="contentinfo">
+	<div class="container top">
+		<div class="site-links clearfix">
+			<ul>
+        <li><a href="/blog/about-us/">About</a></li>
+        <li><a href="/blog/advertise/">Advertise</a></li>
+        <li><a href="/blog/contact/">Contact</a></li>
+        <li><a href="/blog/submit-news-tips/">Submit Tips</a></li>
+        <li><a href="/blog/authors/">Authors</a></li>
+        <li><a href="/blog/write-for-us/">Write for Us</a></li>
+        <li><a href="/blog/publishing-policy/" rel="nofollow" target="_blank">Publishing Policy</a></li>
+        <li><a href="/blog/privacy-policy-for-hongkiatcom/" rel="nofollow" target="_blank">Privacy</a></li>
+        <li><a href="/blog/sitemap.xml">Sitemap</a></li>
+			</ul>
+		</div>
+		<ul class="support-by">
+			<li><a href="http://www.exabytes.com/" rel="nofollow" target="_blank"><img src="http://www.hongkiat.com/blog/wp-content/themes/v6/assets/img/exabytes.png" alt=""></a></li>
+			<li><a href="https://www.maxcdn.com/" rel="nofollow" target="_blank"><img src="http://www.hongkiat.com/blog/wp-content/themes/v6/assets/img/maxcdn.png" alt=""></a></li>
+		</ul>
+	</div>
+</footer>
+
+<script type="text/javascript">
+var max_num_pages = "0";
+var theme_uri     = "http://www.hongkiat.com/blog/wp-content/themes/v6";
+</script>
+
+<div class="et_social_pin_images_outer">
+					<div class="et_social_pinterest_window">
+						<div class="et_social_modal_header"><h3>Pin It on Pinterest</h3><span class="et_social_close"></span></div>
+						<div class="et_social_pin_images" data-permalink="http://www.hongkiat.com/blog/html-5-semantics/" data-title="A Look Into Proper HTML5 Semantics" data-post_id="24930"></div>
+					</div>
+				</div><script type='text/javascript' src='http://www.hongkiat.com/blog/wp-content/plugins/monarch/js/idle-timer.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monarchSettings = {"ajaxurl":"http:\/\/www.hongkiat.com\/blog\/wp-admin\/admin-ajax.php","pageurl":"http:\/\/www.hongkiat.com\/blog\/html-5-semantics\/","stats_nonce":"35840ddf17","share_counts":"ddea8de3e3","follow_counts":"c327181dca","total_counts":"978c109c28","media_single":"3fc73ad954","media_total":"78fb376a00","generate_all_window_nonce":"ce5d1fbb65","no_img_message":"No images available for sharing on this page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.hongkiat.com/blog/wp-content/plugins/monarch/js/custom.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax = {"root":"http:\/\/www.hongkiat.com\/blog\/wp-json","nonce":"fd6c011525"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.hongkiat.com/blog/wp-content/themes/v6/assets/js/scripts.min.js?20150930-1'></script>
+<script type='text/javascript' src='http://www.hongkiat.com/blog/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201618.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.0.2',blog:'1070734',post:'24930',tz:'8',srv:'www.hongkiat.com'} ]);
+	_stq.push([ 'clickTrackerInit', '1070734', '24930' ]);
+</script>
+	    <script type="text/javascript">var omapi_localized = { ajax: 'http://www.hongkiat.com/blog/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '01e1884580' };</script>
+	    
+<script type='text/javascript' src='http://static.fmpub.net/site/hongkiat'></script>
+
+
+<script type="text/javascript" src="http://hongkiat.us.intellitxt.com/intellitxt/front.asp?ipid=29794"></script>
+
+<script type="text/javascript">
+SyntaxHighlighter.defaults['toolbar'] = false;
+SyntaxHighlighter.all();
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+
+<script type="text/javascript">
+
+(function() {
+	var timeoutID;
+	function setDelay() {
+		timeoutID = setTimeout(showContent, 640);
+	}
+	function showContent() {
+		$('#primary').css('opacity', 1);
+	}
+	setDelay();
+})();
+
+(function() {
+
+	var viewportSize = Modernizr.mq('(min-width: 728px)');
+
+	if ( viewportSize ) {
+		
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442935568936-0'); });
+
+	} else {
+
+	var adsenseLoaded = false;
+	var adUnit        = document.getElementById('div-ga-footer');
+	var adWidth       = adUnit.offsetWidth;
+		  
+		window.google_ad_client       = "ca-pub-8918970543424762";
+		window.google_ad_slot         = "1981386208";
+		window.google_override_format = true;
+		
+		window.google_ad_width        = adWidth;
+		window.google_ad_height       = 210;
+		window.google_ad_type         = 'text';
+		
+		window.google_font_face       = 'helvetica';
+		window.google_max_num_ads     = '1';
+
+		if ( adUnit && adsenseLoaded === false ) {
+
+			var container = document.getElementById('div-ga-footer');
+			var writeDoc  = document.write;
+
+			document.write = function(content) {
+				container.innerHTML = content;
+				document.write      = writeDoc;
+			};
+
+			var script       = document.createElement('script');
+					script.type  = 'text/javascript';
+					script.src   = 'http://pagead2.googlesyndication.com/pagead/show_ads.js';
+
+					container.appendChild(script);
+
+					adsenseLoaded = true;
+		}
+	
+	}
+})();
+</script>
+		
+	</body>
+</html>
